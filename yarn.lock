@@ -921,7 +921,7 @@ set-function-length@^1.2.2:
 
 "shared-utility@https://github.com/moonline/Lab.AWS.Lambda.Shared-Utility.git":
   version "1.0.0"
-  resolved "https://github.com/moonline/Lab.AWS.Lambda.Shared-Utility.git#6227d71013104d9694c1ee173a09664d95fb04f5"
+  resolved "https://github.com/moonline/Lab.AWS.Lambda.Shared-Utility.git#d0b74dae208016046cb49dd59de07df8e123ab32"
   dependencies:
     decimal.js "^10.0.0"
     lossless-json "^4.0.0"
