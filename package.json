@@ -1,0 +1,21 @@
+{
+  "name": "shared-utility-consumer",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "esbuild ./test/test.ts --platform=node --target=es2020 --format=esm --bundle --outfile=./test/test.mjs --external:@types/* --external:chai --external:decimal.js --external:lossless-json --external:mocha",
+    "test": "echo '>>> BUILD' && yarn run build && echo '>>> EXECUTE TESTS' && mocha ./test"
+  },
+  "description": "Consume a TS library shared on GitHub",
+  "repository": "https://github.com/moonline/Lab.AWS.Lambda.Calculator",
+  "author": "moonline",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/node": "^22.00.0",
+    "aws-lambda": "^1.0.0",
+    "chai": "^5.0.0",
+    "decimal.js": "^10.0.0",
+    "esbuild": "^0.25.0",
+    "mocha": "^10.0.0",
+    "shared-utility": "https://github.com/moonline/Lab.AWS.Lambda.Shared-Utility.git"
+  }
+}
