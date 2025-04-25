@@ -1,3 +1,7 @@
+# AWS
+aws-login.sh
+.aws-sam
+
 # Compilation results
 *.js
 *.mjs

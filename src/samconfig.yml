@@ -1,0 +1,20 @@
+version: 1.0
+default:
+  global:
+    parameters:
+      stack_name: calculator
+      resolve_s3: true
+      region: eu-central-1
+  build:
+    parameters:
+      cached: true
+      parallel: true
+  validate:
+    parameters:
+      lint: true
+  deploy:
+    parameters:
+      capabilities:
+        - CAPABILITY_IAM
+        - CAPABILITY_NAMED_IAM
+      confirm_changeset: true
